@@ -13,18 +13,17 @@
                     <p>{{timeago created_at}}</p>
                     <a href="/formularios/delete/{{id}}" class="btn btn-danger">Borrar Plan</a>
                     <a href="/formularios/edit/{{id}}" class="btn btn-secondary">Editar</a>
-                    
+                    <a href="/formularios/download/{{id}}" method="GET" class="btn btn-secondary">Descargar Informe</a>
                 </div>    
             </div>
         </div>   
         {{else}} 
         <div class="col-md4 mx-auto">
             <div class="card cardbody text-center">
-                <p>No se hay planes creados aun</p>
-                <a href="/formularios/add">Para Crear Uno has Click Aqui</a>
+                <p>No hay planes creados aun</p>
+                <a href="/formularios/add"> Click aqui, para crear un plan</a>
             </div>
         </div>
         {{/each}}
     </div>
-
 </div>

@@ -14,23 +14,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/profile">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/signin">LogIn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/signup">Registrame</a>
-        </li>
         {{#if user}}
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/profile">Perfil</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" href="/formularios/add">Crear Nuevo Plan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/logout">LogOut</a>
+            <a class="nav-link active" aria-current="page" href="/logout">Cerrar Sesion</a>
           </li>
-
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/signin">Iniciar Sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/signup">Registrame</a>
+        </li>
         {{/if}}  
       </ul>
     </div>
